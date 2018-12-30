@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quão seguro estou? Teste de segurança online</title>
+    <meta name="description" content="Teste de segurança online (gratuito). Faça o teste e descubra se pode ser rastreado">
+    <meta name="keywords" content="Segurança,Seguranca,Rastreamento,Gratis,Gratuito,Teste segurança,Anonimato,Online,Teste online,Security,Rastreamento IP,Tracking,Tracker,IP Tracker,Rastreador online">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Teste de segurança</h1>
+        <p>Verifique o quão anônimo e seguro você está. Faça o teste gratuitamente</p>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-danger pad" onclick="StartTest();">Iniciar teste de segurança</button>
+    </div>
+    <br>
+    <p class="text-center"><em>*Todas as informações são extraídas legalmente atravéz de seu navegador</em></p>
+    <br>
+    <div id="loading" class="text-center hidden">
+        <img src="loading.gif"/>
+    </div>
+
+    <div id="table-cont" class="container text-center" style="display: none;">
+    <table class="table" class="text-center">
+        <thead>
+            <tr>
+                <th scope="col">Informação</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody id="table-bd">
+            
+        </tbody>
+    </table>
+    </div>
+
+    <div id="text" class="text-center"></div>
+    <canvas id="glcanvas" width="0" height="0"></canvas>
+</body>
+<script src="main.js"></script>
+
+</html>

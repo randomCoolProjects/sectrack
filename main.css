@@ -1,0 +1,29 @@
+html, body
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+button.pad
+{
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+img
+{
+    max-width: 10vw;
+}
+
+.hidden
+{
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+canvas
+{
+    display: none;
+}
