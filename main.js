@@ -142,12 +142,12 @@ function GetInfo() {
     /*Usage example*/
     findIP.then(ip => result.IPv4 = ip).catch(e => ShowError(e));
 
-    $.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function (data) {
-        result.Cidade = data.geoplugin_city;
-        result.Estado = data.geoplugin_region;
-        result.Pais = data.geoplugin_countryName;
-        result.Longitude = data.geoplugin_longitude;
-        result.Latitude = data.geoplugin_latitude;
+    $.getJSON('https://ipapi.co/json/', function (data) {
+        result.Cidade = data.city;
+        result.Estado = data.region;
+        result.Pais = data.country_name;
+        result.Longitude = data.longitude;
+        result.Latitude = data.latitude;
     });
 
     navigator.getBattery().then(function (battery) {
