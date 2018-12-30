@@ -150,11 +150,18 @@ function GetInfo() {
         result.Latitude = data.latitude;
     });
 
+    if (navigator.getBattery){
     navigator.getBattery().then(function (battery) {
 
         result["Nível de bateria"] = (battery.level * 100) + '%';
 
     });
+    }
+    else
+    {
+     result["Nível de bateria"] = "Indisponível neste navegador";   
+    }
+        
 
     var time = new Date();
     result.Data_e_hora = time.toString();
